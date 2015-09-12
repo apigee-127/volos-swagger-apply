@@ -1,0 +1,33 @@
+{
+  "name": "volos-swagger-apply",
+  "version": "0.0.1",
+  "description": "A swagger-node fitting for x-volos-apply",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apigee-127/volos-swagger-apply.git"
+  },
+  "keywords": [
+    "swagger",
+    "volos",
+    "apigee",
+    "cache",
+    "quota",
+    "analytics",
+    "spikearrest",
+    "spike",
+    "arrest"
+  ],
+  "author": "Scott Ganyo <sganyo@apigee.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apigee-127/volos-swagger-apply/issues"
+  },
+  "homepage": "https://github.com/apigee-127/volos-swagger-apply#readme",
+  "dependencies": {
+    "volos-swagger": "^0.7.9"
+  }
+}
