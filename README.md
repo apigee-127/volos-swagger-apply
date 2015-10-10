@@ -10,23 +10,23 @@ This module allows you add and configure [Volos](https://github.com/apigee-127/v
 
 Analytics is Apigee-specific, but every other policy is available as an in-memory and Redis provider as well as through Apigee Edge.
 
-More information on Volos here: https://github.com/apigee-127/volos
+More information on Volos here: [https://github.com/apigee-127/volos]()
 
-More information on applying policies here: https://github.com/apigee-127/a127-documentation/wiki/Policies
+More information on applying policies here: [https://github.com/apigee-127/a127-documentation/wiki/Policies]()
 
-Example app here: https://github.com/apigee-127/swagger-node-examples/tree/master/volos-plugins
+Example app here: [https://github.com/apigee-127/swagger-node-examples/tree/master/volos-plugins]()
 
 Installation
 ------------
 
-1. Add the volos modules you plan use to your application dependencies. Example:
+1) Add the volos modules you plan use to your application dependencies. Example:
 
 ```
 npm install --save volos-swagger-apply
 npm install --save volos-quota-memory
 ```
 
-2. Add the volos_apply fitting to your pipe (config/default.yaml). I suggest placing it just before your controller router:
+2) Add the volos_apply fitting to your pipe (config/default.yaml). I suggest placing it just before your controller router:
 
 ```yaml
     swagger_controllers:
@@ -39,7 +39,7 @@ npm install --save volos-quota-memory
       - _router
 ```
 
-3. Add the x-volos-resources extension tag to your Swagger with your policy configuration:
+3) Add the x-volos-resources extension tag to your Swagger with your policy configuration:
 
 ```yaml
 x-volos-resources:
@@ -51,7 +51,7 @@ x-volos-resources:
       allow: 1
 ```
 
-4. Add the "x-volos-apply" tag to any paths or operations on your Swagger you would like your policy to apply it to along with any configuration that is necessary:
+4) Add the "x-volos-apply" tag to any paths or operations on your Swagger you would like your policy to apply it to along with any configuration that is necessary:
 
 ```yaml
 paths:
