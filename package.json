@@ -1,6 +1,6 @@
 {
   "name": "volos-swagger-apply",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A swagger-node fitting for x-volos-apply",
   "main": "index.js",
   "scripts": {
