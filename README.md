@@ -14,6 +14,7 @@ More information on Volos here: https://github.com/apigee-127/volos
 
 More information on applying policies here: https://github.com/apigee-127/a127-documentation/wiki/Policies
 
+Example app here: https://github.com/apigee-127/swagger-node-examples/tree/master/volos-plugins
 
 Installation
 ------------
