@@ -19,14 +19,21 @@ Example app here: [https://github.com/apigee-127/swagger-node-examples/tree/mast
 Installation
 ------------
 
-1) Add the volos modules you plan use to your application dependencies. Example:
+1) Add the volos-swagger-apply module to your fittings directory. The easiest way to do this presently is to use `npm install` to install the module (to node_modules) and then move it to your fittings directory. For example, assuming you are in your main project directory, you can perform the following steps:
 
 ```
-npm install --save volos-swagger-apply
+npm install volos-swagger-apply
+mkdir api/fittings
+mv node_modules/volos-swagger-apply api/fittings
+```
+
+2) Add the volos modules you plan use to your application dependencies. We'll be setting an in-memory quota, so we'll add the volos-quota-memory module to our dependencies. Example:
+
+```
 npm install --save volos-quota-memory
 ```
 
-2) Add the volos_apply fitting to your pipe (config/default.yaml). I suggest placing it just before your controller router:
+3) Add the volos_apply fitting to your pipe (config/default.yaml). I suggest placing it just before your controller router:
 
 ```yaml
     swagger_controllers:
@@ -39,7 +46,7 @@ npm install --save volos-quota-memory
       - _router
 ```
 
-3) Add the x-volos-resources extension tag to your Swagger with your policy configuration:
+4) Add the x-volos-resources extension tag to your Swagger with your policy configuration:
 
 ```yaml
 x-volos-resources:
@@ -51,7 +58,7 @@ x-volos-resources:
       allow: 1
 ```
 
-4) Add the "x-volos-apply" tag to any paths or operations on your Swagger you would like your policy to apply it to along with any configuration that is necessary:
+5) Add the "x-volos-apply" tag to any paths or operations on your Swagger you would like your policy to apply it to along with any configuration that is necessary:
 
 ```yaml
 paths:
